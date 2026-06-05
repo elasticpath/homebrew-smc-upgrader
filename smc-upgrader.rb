@@ -9,7 +9,7 @@ class SmcUpgrader < Formula
   url "https://github.com/elasticpath/smc-upgrader/releases/download/smc-upgrader-#{SMC_UPGRADER_VERSION}/smc-upgrader-#{SMC_UPGRADER_VERSION}.zip"
   sha256 "00f9cf966d5110ccddac6ad66cf7d798478cde3670f68539f00b7de1fffe0289"
   head "git@github.com:elasticpath/smc-upgrader.git"
-  license "NOASSERTION"
+  license "Apache-2.0"
 
   def install
     inreplace "smc-upgrader" do |s|
@@ -17,6 +17,7 @@ class SmcUpgrader < Formula
     end
     bin.install "smc-upgrader"
     prefix.install "smc-upgrader-#{SMC_UPGRADER_VERSION}-jar-with-dependencies.jar"
+    prefix.install "native"
   end
 
   test do
