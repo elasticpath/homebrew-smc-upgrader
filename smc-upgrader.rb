@@ -2,12 +2,12 @@ require "formula"
 
 class SmcUpgrader < Formula
   
-  SMC_UPGRADER_VERSION = "2.1.0"
+  SMC_UPGRADER_VERSION = "2.1.1"
 
   desc "smc upgrader"
   homepage "https://github.com/elasticpath/smc-upgrader"
   url "https://github.com/elasticpath/smc-upgrader/releases/download/smc-upgrader-#{SMC_UPGRADER_VERSION}/smc-upgrader-#{SMC_UPGRADER_VERSION}.zip"
-  sha256 "00f9cf966d5110ccddac6ad66cf7d798478cde3670f68539f00b7de1fffe0289"
+  sha256 "cd8179014772287aaf60aaa2f961ccd31da0e4f8883ee2cdf1f75aec74bbad6f"
   head "git@github.com:elasticpath/smc-upgrader.git"
   license "Apache-2.0"
 
